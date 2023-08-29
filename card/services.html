@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: poppins;
+            background: blueviolet;
+
+        }
+
+        .wrapper,
+        .single-card {
+            height: 450px;
+            max-width: 300px;
+            margin: auto;
+            position: relative;
+        }
+
+        .wrapper {
+            perspective: 900px;
+
+        }
+
+        .single-card {
+            text-align: center;
+            transition: all 1.5s cubic-bezier(0.7, -.5, 0.3, 1.8);
+            transform-style: preserve-3d;
+
+        }
+
+        .wrapper:hover .single-card {
+            transform: rotateY(180deg);
+        }
+
+        .front,
+        .back {
+            width: 300px;
+            position: relative;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+        }
+
+        .front {
+            cursor: pointer;
+            height: 100%;
+            background-image: url(./fed.png);
+            backface-visibility: hidden;
+            border-radius: 50px;
+            background-size: cover;
+            background-position: center center;
+        }
+        /* .second{
+            background-image: url(./design.png);
+            background-size: cover;
+        } */
+
+        .back {
+            transform: rotateY(180deg);
+            position: absolute;
+            border-radius: 50px;
+            background: #fff;
+            height: 450px;
+        }
+
+        .content {
+            padding-top: 25%;
+        }
+
+        .content h2 {
+            font-size: 25px;
+            margin: 0;
+            font-weight: 400;
+
+        }
+
+        
+
+        .socials {
+            margin-top: 20%;
+        }
+
+        .socials i {
+            font-size: 30px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="single-card">
+            <div class="front"></div>
+            <div class="back">
+                <div class="content">
+                    <h2><b>Front-end-developer</b></h2>
+                    <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.
+                        Optio <br>illum dicta fugit dolor, ratione <br>quibusdam,
+                        incidunt placeat animi unde. <br>Blanditiis corrupti rerum quidem.
+                        <br>Culpa exercitationem harum deleniti <br>minima laborum repellat magnam
+                    </p>
+                    <p class="socials">
+                        <i class='bx bxl-linkedin'></i>
+                        <i class='bx bxl-facebook'></i>
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-whatsapp'></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- second card -->
+    <div class="wrapper">
+        <div class="single-card">
+            <div class="front second" ></div>
+            <div class="back">
+                <div class="content">
+                    <h2><b>Gaphic Designing</b></h2>
+                    <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.
+                        Optio <br>illum dicta fugit dolor, ratione <br>quibusdam,
+                        incidunt placeat animi unde. <br>Blanditiis corrupti rerum quidem.
+                        <br>Culpa exercitationem harum deleniti <br>minima laborum repellat magnam
+                    </p>
+                    <p class="socials">
+                        <i class='bx bxl-linkedin'></i>
+                        <i class='bx bxl-facebook'></i>
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-whatsapp'></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- third card -->
+    <div class="wrapper">
+        <div class="single-card">
+            <div class="front"></div>
+            <div class="back">
+                <div class="content">
+                    <h2><b>Gaphic Designing</b></h2>
+                    <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.
+                        Optio <br>illum dicta fugit dolor, ratione <br>quibusdam,
+                        incidunt placeat animi unde. <br>Blanditiis corrupti rerum quidem.
+                        <br>Culpa exercitationem harum deleniti <br>minima laborum repellat magnam
+                    </p>
+                    <p class="socials">
+                        <i class='bx bxl-linkedin'></i>
+                        <i class='bx bxl-facebook'></i>
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-whatsapp'></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
